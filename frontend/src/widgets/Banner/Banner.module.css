@@ -1,0 +1,127 @@
+.header {
+  width: 100%;
+}
+
+.toolbar {
+  background-color: #805835;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.toolbarIn {
+  display: flex;
+  margin: 10px 100px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.toolbarLogo {
+  display: flex;
+}
+
+.logo {
+  height: 43px;
+  display: flex;
+}
+
+.links {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  line-height: 16.71px;
+}
+
+.linksButton {
+  font-weight: 500;
+  font-size: 14px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.linksButtonAutorization {
+  color: #ffffff;
+  background-color: #f19892;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.banner {
+  background-color: #fee7e1;
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  display: flex;
+  width: 50%;
+  margin: 67px 100px;
+  flex-direction: column;
+  padding-right: 200px;
+  gap: 22px;
+}
+
+.image {
+  display: flex;
+  width: 50%;
+}
+
+.title {
+  color: #f19892;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 52.9px;
+  margin-top: 50px;
+}
+
+.titleText {
+  color: #4d4d4d;
+}
+
+.discription {
+  line-height: 18px;
+  font-size: 14px;
+  margin-right: 35px;
+  font-weight: 400;
+}
+
+.button {
+  background-color: #f19892;
+  width: 40%;
+  white-space: nowrap;
+  padding: 16px 22px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.imageBanner {
+  width: 500px;
+}
+
+.freeConsultationFormText {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.phone {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.buttonPut {
+  background-color: #f19892;
+}

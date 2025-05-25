@@ -1,0 +1,60 @@
+.methodologyBlock {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 100px;
+  gap: 40px;
+  padding: 100px 0px;
+}
+
+.titleQuestion {
+  display: flex;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 30.63px;
+  margin-top: 25px;
+  flex-direction: column;
+  color: #4d4d4d;
+}
+
+.titleTop {
+  display: flex;
+  justify-content: center;
+  color: #4d4d4d;
+}
+
+.cardsBlock {
+  display: flex;
+  margin-bottom: 25px;
+  flex-direction: row;
+  gap: 100px;
+  justify-content: space-between;
+}
+
+.card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  box-shadow: 0 1.39px 2.78px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  color: #4d4d4d;
+  font-size: 20px;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  padding: 0px 60px;
+  text-align: center;
+}

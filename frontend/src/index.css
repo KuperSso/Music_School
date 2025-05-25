@@ -1,0 +1,54 @@
+body {
+  font-family: "Inter Variable", sans-serif;
+  font-weight: 400;
+  color: #717171;
+  margin: 0px;
+}
+
+.pi-arrow-right:before {
+  font-size: 9px;
+  font-weight: 100;
+  display: flex;
+}
+
+.p-rating .p-rating-icon {
+  color: #f4c542 !important;
+}
+
+.p-dialog {
+  background-image: url("../src/widgets/Banner/contacts.svg") !important; /* путь к твоей картинке */
+  background-size: cover;
+  width: 465px;
+  background-position: center;
+  padding: 50px !important;
+  position: relative;
+}
+.p-dialog-header {
+  text-align: center !important;
+}
+.p-dialog-content {
+  padding-bottom: 0px !important;
+  border-radius: 20px;
+}
+
+.p-dialog-header {
+  padding-top: 0px !important;
+}
+
+.p-inputtext {
+  border-color: #bbbc86;
+}
+
+.p-button {
+  border: none;
+}
+
+.p-button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.p-button:active {
+  transform: scale(0.97);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) inset;
+}

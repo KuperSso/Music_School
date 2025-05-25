@@ -1,0 +1,89 @@
+.footer {
+  background-color: #805835;
+  display: flex;
+}
+
+.footerLeft {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 45px 100px;
+}
+.discription {
+  color: white;
+  font-size: 14px;
+  line-height: 20px;
+  padding-bottom: 20px;
+  padding-left: 5px;
+}
+
+.linksMessengers {
+  display: flex;
+  gap: 12px;
+  padding-left: 5px;
+}
+
+.linksTg,
+.linksVk {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(6px);
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+  transition: 0.3s ease, transform 0.2s ease;
+}
+
+.footerRight {
+  display: flex;
+  flex: 2;
+  gap: 88px;
+  padding: 45px 100px 45px 0px;
+}
+
+.support,
+.contacts,
+.company {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.linksSite {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  line-height: 16px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 20px;
+  color: white;
+}
+
+.links {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.links:hover {
+  text-decoration: underline;
+}
+
+.linksContact {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.linksContact:hover {
+  text-shadow: 0px 0px 10px #fff;
+}
