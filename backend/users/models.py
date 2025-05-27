@@ -1,3 +1,4 @@
+import re
 from django.db import models
 from django.contrib.auth.models import (
     AbstractBaseUser,
@@ -23,7 +24,7 @@ class CustomUserManager(BaseUserManager):
 
 
 class CustomUser(AbstractBaseUser, PermissionsMixin):
-    phone = models.CharField(max_length=15, unique=True)
+    phone = models.CharField(max_length=18, unique=True)
     email = models.EmailField(unique=True)
     full_name = models.CharField(max_length=100)
 
@@ -37,3 +38,11 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
 
     def __str__(self):
         return self.phone
+
+    def save(self, *args, **kwargs):
+        digits = re.sub(r"\D", "", self.phone)
+        if len(digits) == 11 and digits.startswith("7"):
+            self.phone = (
+                f"+7 ({digits[1:4]}) {digits[4:7]}-{digits[7:9]}-{digits[9:11]}"
+            )
+        super().save(*args, **kwargs)
