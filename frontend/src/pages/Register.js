@@ -99,7 +99,7 @@ export default function Register() {
             className={`${styles.loginButton}`}
             onClick={() => navigate("/login")}
           >
-            Войти
+            Регистрация
           </a>
         </div>
         {error && <p style={{ color: "red" }}>{error}</p>}
