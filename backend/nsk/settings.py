@@ -4,12 +4,14 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
-SECRET_KEY = "django-insecure-)1xsvwb%0(3q=)q5@c$)y1w&ve_#^q88zqarib52z)h&yl7&_y"
+SECRET_KEY = os.getenv(
+    "DJANGO_SECRET_KEY",
+)
+DEBUG = os.getenv("DJANGO_DEBUG", "False") == "True"
 
-DEBUG = True
+ALLOWED_HOSTS = os.getenv("DJANGO_ALLOWED_HOSTS", "").split(",")
 
-ALLOWED_HOSTS = []
-
+CSRF_TRUSTED_ORIGINS = [f"https://{host}" for host in ALLOWED_HOSTS if host]
 
 AUTH_USER_MODEL = "users.CustomUser"
 
@@ -43,10 +45,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-CORS_ALLOWED_ORIGINS = [
-    "http://127.0.0.1:8000",
-    "http://localhost:3000",
-]
+CORS_ALLOWED_ORIGINS = os.getenv("CORS_ALLOWED_ORIGINS", "").split(",")
 
 ROOT_URLCONF = "nsk.urls"
 
@@ -70,11 +69,11 @@ WSGI_APPLICATION = "nsk.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": "music_school",
-        "USER": "olyabrowsuser",
-        "PASSWORD": "admin",
-        "HOST": "localhost",
-        "PORT": "5432",
+        "NAME": os.getenv("POSTGRES_DB", "music_school"),
+        "USER": os.getenv("POSTGRES_USER", "olyabrowsuser"),
+        "PASSWORD": os.getenv("POSTGRES_PASSWORD", "admin"),
+        "HOST": os.getenv("POSTGRES_HOST", "db"),
+        "PORT": os.getenv("POSTGRES_PORT", "5432"),
     }
 }
 
@@ -103,14 +102,11 @@ USE_I18N = True
 USE_TZ = True
 
 
-TEMPLATES[0]["DIRS"] = [os.path.join(BASE_DIR, "frontend", "build")]
-STATICFILES_DIRS = [
-    BASE_DIR / "frontend" / "build" / "static",
-]
-
 STATIC_URL = "/static/"
-MEDIA_URL = "/image/"
-MEDIA_ROOT = BASE_DIR / "frontend" / "build" / "image"
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
+
+MEDIA_URL = "/media/"
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"

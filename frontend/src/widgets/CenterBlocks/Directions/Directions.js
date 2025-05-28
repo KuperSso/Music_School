@@ -1,7 +1,9 @@
 import styles from "./Directions.module.css";
 import { Button } from "primereact/button";
+import { useNavigate } from "react-router-dom";
 
 const Directions = () => {
+  const navigate = useNavigate();
   return (
     <div id="directions">
       <div className={`${styles.directions}`}>
@@ -20,6 +22,7 @@ const Directions = () => {
             <Button
               className={`${styles.buttonCard}`}
               label="Подробнее"
+              onClick={() => navigate("/piano")}
               icon="pi pi-arrow-right"
               iconPos="right"
             />

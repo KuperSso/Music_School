@@ -17,7 +17,6 @@ export default function Home() {
       <Privilege />
       <Directions />
       <Reviews />
-      <Footer />
     </PrimeReactProvider>
   );
 }

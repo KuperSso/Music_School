@@ -1,0 +1,41 @@
+.phono {
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 100px 50px;
+}
+
+.title {
+  color: #202020;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.levels {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.level {
+  display: flex;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px 40px;
+  border-radius: 12px;
+  width: 73vw;
+  color: #202020;
+  text-decoration: none;
+  justify-content: space-between;
+}
+
+.levelTitle {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.logoLinks {
+  width: 15%;
+}

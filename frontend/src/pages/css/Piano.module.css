@@ -1,0 +1,293 @@
+.piano {
+  padding-top: 63px;
+  display: flex;
+  flex-direction: column;
+}
+
+.pianoBlock {
+  display: flex;
+  padding: 68px 100px;
+  background-color: #fee7e1;
+}
+
+.pianoImage {
+  display: flex;
+  flex: 1;
+}
+
+.logoLinks {
+  width: 60%;
+}
+
+.pianoText {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
+}
+
+.pianoTitle {
+  font-size: 48px;
+  font-weight: 600;
+  color: #4d4d4d;
+}
+
+.pianoText {
+  padding-right: 19%;
+}
+
+.levelsBlock {
+  display: flex;
+  padding: 68px 100px;
+}
+
+.levelsText {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.levelsTitle {
+  color: #bbbc86;
+  font-size: 52px;
+  font-weight: 600;
+}
+
+.levelsDesc {
+  padding: 0px 93px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.levels {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.level {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.stepLevel {
+  color: #4d4d4d;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.levelDesc {
+  padding: 0px 100px;
+}
+
+.teacherBlock {
+  padding: 68px 100px;
+  background-color: #fee7e1;
+}
+
+.сards {
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  box-sizing: border-box;
+  padding: 15px 50px;
+  width: 96%;
+  height: 36vw;
+  margin: 0 auto;
+  position: relative;
+}
+.cardName {
+  display: flex;
+  justify-content: center;
+  font-size: 28px;
+}
+
+.maleName {
+  color: #bbbc86;
+}
+
+.femaleName {
+  color: #f19892;
+}
+
+.cardsAvatar {
+  display: flex;
+  justify-content: center;
+}
+
+.avatar {
+  width: 30%;
+}
+
+.cardsDescription {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cardsText {
+  display: flex;
+}
+
+.titleCard {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.cardLinks {
+  display: flex;
+  flex: 1;
+  color: #3a3d5b;
+}
+
+.customNext,
+.customPrev {
+  position: absolute;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  width: 40px !important;
+  height: 40px !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-color: transparent !important;
+  border: none !important;
+  z-index: 9999 !important;
+  pointer-events: auto !important;
+}
+
+.customPrev {
+  left: -10px !important;
+  background-image: url("../../../public/image/piano/left.svg") !important;
+}
+
+.customNext {
+  right: -10px !important;
+  background-image: url("../../../public/image/piano/right.svg") !important;
+}
+
+.swiperWrapper {
+  position: relative;
+  width: 100%;
+  padding: 40px 60px;
+  box-sizing: border-box;
+}
+
+.kursBlock {
+  padding: 100px;
+}
+
+.cardsKurs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.cardOne {
+  background-color: #805835;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  box-sizing: border-box;
+  padding: 40px;
+  width: 33.3%;
+  color: #fff;
+  height: 31vw;
+}
+
+.cardTwo {
+  background-color: #bbbc86;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  box-sizing: border-box;
+  padding: 40px;
+  width: 33.3%;
+  color: #fff;
+  height: 32vw;
+}
+
+.cardThree {
+  background-color: #f3c0bd;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  box-sizing: border-box;
+  padding: 40px;
+  width: 33.3%;
+  color: #fff;
+}
+
+.cardUp {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.titleKurs {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.prices {
+  width: 70%;
+}
+
+.pricesZiro {
+  width: 36%;
+}
+
+.descKurs {
+  color: #ffffffcc;
+  font-size: 13px;
+}
+
+.cardCenter {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cardCenterTitle {
+  font-weight: 600;
+}
+
+.cardCenterDesc {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cardCenterTitle {
+  display: flex;
+  gap: 5px;
+}
+
+.linksButtonGo {
+  padding: 16px;
+  background-color: #f19892;
+}
+
+.video {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #805835;
+}

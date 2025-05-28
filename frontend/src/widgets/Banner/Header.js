@@ -1,9 +1,16 @@
 import styles from "./Banner.module.css";
+import { useEffect, useState } from "react";
 import { Button } from "primereact/button";
 import { useNavigate } from "react-router-dom";
 
 export default function Header() {
   const navigate = useNavigate();
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+
+  useEffect(() => {
+    const token = localStorage.getItem("access");
+    setIsAuthenticated(!!token);
+  }, []);
 
   const handleScrollAndCloseSidebar = (sectionId) => {
     const element = document.getElementById(sectionId);
@@ -54,13 +61,25 @@ export default function Header() {
           >
             Контакты
           </a>
-          <Button
-            className={`${styles.linksButtonAutorization}`}
-            onClick={() => navigate("/login")}
-            label="Войти"
-            icon="pi pi-arrow-right"
-            iconPos="right"
-          />
+          {isAuthenticated ? (
+            <>
+              <Button
+                className={`${styles.linksButtonAutorization}`}
+                onClick={() => navigate("/office")}
+                label="Личный Кабинет"
+                icon="pi pi-arrow-right"
+                iconPos="right"
+              />
+            </>
+          ) : (
+            <Button
+              className={`${styles.linksButtonAutorization}`}
+              onClick={() => navigate("/login")}
+              label="Войти"
+              icon="pi pi-arrow-right"
+              iconPos="right"
+            />
+          )}
         </div>
       </div>
     </div>

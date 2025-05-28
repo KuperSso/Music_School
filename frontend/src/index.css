@@ -37,6 +37,7 @@ body {
 
 .p-inputtext {
   border-color: #bbbc86;
+  border-radius: 10px;
 }
 
 .p-button {

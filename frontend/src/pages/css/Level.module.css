@@ -1,0 +1,54 @@
+.level {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  padding: 150px 50px;
+}
+
+.title {
+  color: #202020;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.desc {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  flex-direction: column;
+  display: flex;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px 40px;
+  color: #202020;
+  gap: 20px;
+  width: 33%;
+  border-radius: 30px;
+}
+
+.imgfone {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.imgnext {
+  width: 35%;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.topic {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.topicDesc {
+  font-size: 12px;
+}

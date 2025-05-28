@@ -1,0 +1,45 @@
+.register {
+  display: flex;
+  padding: 150px 0px 0px 0px;
+  justify-content: center;
+}
+.description,
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.title {
+  font-weight: 600;
+  padding-bottom: 20px;
+  font-size: 30px;
+  color: #4d4d4d;
+}
+.email,
+.fullname,
+.phone,
+.password {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.buttonPassword {
+  display: flex;
+  justify-content: flex-end;
+  color: #bbbc86;
+  text-decoration: none;
+}
+
+.buttonPut {
+  border-radius: 0px;
+  background-color: #f19892;
+  margin-bottom: 10px;
+}
+
+.loginButton {
+  color: #bbbc86;
+  text-decoration: none;
+  cursor: pointer;
+}
