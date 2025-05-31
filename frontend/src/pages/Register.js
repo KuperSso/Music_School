@@ -92,14 +92,18 @@ export default function Register() {
             />
           </div>
         </div>
-        <Button type="submit" className={`${styles.buttonPut}`} label="Войти" />
+        <Button
+          type="submit"
+          className={`${styles.buttonPut}`}
+          label="Регистрация"
+        />
         <div className={`${styles.registation}`}>
           У вас уже есть аккаунт?{" "}
           <a
             className={`${styles.loginButton}`}
-            onClick={() => navigate("/login")}
+            onClick={() => navigate("/office")}
           >
-            Регистрация
+            Войти
           </a>
         </div>
         {error && <p style={{ color: "red" }}>{error}</p>}
