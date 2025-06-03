@@ -1,5 +1,4 @@
 import styles from "./css/Teory.module.css";
-import { Link } from "react-router-dom";
 
 const Teory = () => {
   return (
@@ -12,7 +11,9 @@ const Teory = () => {
               Тема 1: Посадка и постановка рук
             </div>
           </div>
-          <img src="/image/office/right.svg" />
+          <a href="https://disk.yandex.ru/d/Sc4FHVu7UAPt5Q" target="_blank">
+            <img src="/image/office/right.svg" />
+          </a>
         </div>
         <div className={`${styles.level}`}>
           <div className={`${styles.levelTitle}`}>
@@ -28,7 +29,7 @@ const Teory = () => {
         </div>
         <div className={`${styles.level}`}>
           <div className={`${styles.levelTitle}`}>
-            <div className={`${styles.levelDesc}`}>Тема 3: Длительности </div>
+            <div className={`${styles.levelDesc}`}>Тема 4: Длительности </div>
           </div>
           <img src="/image/office/right.svg" />
         </div>
