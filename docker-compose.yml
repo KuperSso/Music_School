@@ -50,6 +50,9 @@ services:
   #     - backend
 
   nginx:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
     image: nginx:latest
     container_name: nginx
     depends_on:
