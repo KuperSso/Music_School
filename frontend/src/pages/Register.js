@@ -18,11 +18,14 @@ export default function Register() {
     setError(null);
 
     try {
-      const response = await fetch("http://127.0.0.1:8000/api/register/", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ phone, password, full_name: fullName, email }),
-      });
+      const response = await fetch(
+        "http:///new-school-for-kids.ru/api/register/",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ phone, password, full_name: fullName, email }),
+        }
+      );
 
       const data = await response.json();
 
