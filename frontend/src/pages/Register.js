@@ -101,7 +101,7 @@ export default function Register() {
           У вас уже есть аккаунт?{" "}
           <a
             className={`${styles.loginButton}`}
-            onClick={() => navigate("/office")}
+            onClick={() => navigate("/login")}
           >
             Войти
           </a>

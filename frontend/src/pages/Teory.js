@@ -8,7 +8,7 @@ const Teory = () => {
         <div className={`${styles.level}`}>
           <div className={`${styles.levelTitle}`}>
             <div className={`${styles.levelDesc}`}>
-              Тема 1: Посадка и постановка ног
+              Тема 1: Посадка и постановка рук
             </div>
           </div>
           <a href="https://disk.yandex.ru/d/Sc4FHVu7UAPt5Q" target="_blank">
