@@ -9,10 +9,14 @@ RUN npm install
 COPY ./frontend .
 RUN npm run build
 
+# Этап 2: Nginx для хостинга статики
 FROM nginx:alpine
 
+# Удалим конфигурацию по умолчанию
+# Копируем сборку React-приложения
 COPY --from=build /app/build /usr/share/nginx/html
 
+# (Опционально) добавим свой конфиг, если у тебя SPA (чтобы history fallback работал)
 COPY ./nginx/default.conf /etc/nginx/conf.d/default.conf
 
 EXPOSE 80
